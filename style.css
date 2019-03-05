@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 160%;
+	color: #666;
+	text-align: center;
+}
+
+section {
+	overflow: auto;
+	padding: 50px 80px;
+}
+
+.header {
+	font-size: 300%;
+	text-align: center;
+}
+
+.parallaxHeader {
+	position: absolute;
+	color: #fff;
+	font-size: 250%;
+	top: 38%;
+	width: 100%;
+	letter-spacing: 3px;
+	text-shadow: 0 0 10px #000;
+}
+
+.parallax1 {
+	background: url(images/about.jpg);
+	min-height: 60%
+}
+.parallax2 {
+	background: url(images/process.jpg);
+	min-height: 60%
+}
+.parallax3 {
+	background: url(images/visit.jpg);
+	min-height: 60%
+}
+.parallax4 {
+	background: url(images/intouch.jpg);
+	min-height: 60%
+}
+.parallax {
+	position: relative;
+	opacity: .85;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+
+.dark {
+	background-color: #323232;
+	color: #878787;
+}
+.light {
+	background-color: #fcfcfc;
+}
+
+.sectionParagraph{
+	text-align: left;
+}
+
+@media (max-width: 780px) {
+	.header {
+		font-size: 150%;
+	}
+	.innerHeader {
+
+	}
+
+}
