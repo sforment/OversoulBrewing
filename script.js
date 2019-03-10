@@ -51,3 +51,31 @@ document.getElementById('about').addEventListener('click', scrollToAbout);
 document.getElementById('beer').addEventListener('click', scrollToBeer);
 document.getElementById('visit').addEventListener('click', scrollToVisit);
 document.getElementById('contact').addEventListener('click', scrollToContact);
+
+//Function handling social media link hover effects
+
+facebookChange = () => {
+	document.getElementById("facebook").src="images/facebookHov.png";
+}
+facebookRevert = () => {
+	document.getElementById("facebook").src="images/facebook.png";
+}
+twitterChange = () => {
+	document.getElementById("twitter").src="images/twitterHov.png";
+}
+twitterRevert = () => {
+	document.getElementById("twitter").src="images/twitter.png";
+}
+instagramChange = () => {
+	document.getElementById("instagram").src="images/instagramHov.png";
+}
+instagramRevert = () => {
+	document.getElementById("instagram").src="images/instagram.png";
+}
+
+document.querySelector('.facebook').addEventListener('mouseover', facebookChange);
+document.querySelector('.facebook').addEventListener('mouseout', facebookRevert);
+document.querySelector('.twitter').addEventListener('mouseover', twitterChange);
+document.querySelector('.twitter').addEventListener('mouseout', twitterRevert);
+document.querySelector('.instagram').addEventListener('mouseover', instagramChange);
+document.querySelector('.instagram').addEventListener('mouseout', instagramRevert);

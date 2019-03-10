@@ -62,6 +62,13 @@ body, html {
 	width: 60vh;
 	height: 60vh;
 }
+@media screen and (max-width: 500px) {
+	#logo {
+		margin-top: 12vw;
+		width: 85vw;
+		height: 85vw;
+	}
+}
 
 .flexContainer {
 	display: flex;
@@ -84,79 +91,92 @@ body, html {
 .sectionHeader {
 	text-align: center;
 	color: #434656;
-	padding-top: 3.2vw;
-	padding-bottom: 0.5vw;
+	padding-top: 3.2vh;
+	padding-bottom: 0.5vh;
 	background-color: #fcfcfc;
 	font-family: lobster, sans-serif;
-	font-size: 150%;
+	font-size: 180%;
 }
 
 .sectionParagraph{
-	padding: 3.2vw;
+	padding: 3.8vh 1vh 5.8vh 1vh;
 	text-align: left;
 }
 
 .sectionVisit {
-	padding: 3.8vw 0;
+	padding: 3.8vh 0;
 	text-align: center;
 	font-size: 23px
 }
 
 .sectionVisit p {
-	padding: 3.8vw 0;
+	padding: 3.8vh 0;
 }
 
 .sectionVisit:first-child {
-	padding-top: 5vw;
+	padding-top: 5vh;
 }
 
 .sectionContact {
-	padding: 3.8vw 0;
+	padding: 3.8vh 0;
 	text-align: center;
 	font-size: 23px;
 	overflow-wrap: break-word;
 }
 
 .sectionContact p {
-	padding: 3.8vw 0;
+	padding: 3.8vh 1.2vh;
 }
 
 .sectionContact label {
-	padding: 3.8vw 0;
+	padding: 3.8vh 0;
 	font-size: 23px;
 }
 
 .sectionContact:first-child {
-	padding-top: 5vw;
+	padding-top: 5vh;
 }
 
 input[type=email] {
-  width: 65%;
-  padding: 1vh;
-  margin: 3vh 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
+	width: 65%;
+	padding: 1vh;
+	margin: 3vh 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
 }
 input[type=submit] {
-  width: 20vh;
-  background-color:#A7AABC;
-  color: #434656;
-  padding: 1vh;
-  margin: 1vh 0;
-  border: solid #434656 .4px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: ubuntu, sans-serif;
+	width: 20vh;
+	background-color:#A7AABC;
+	color: #434656;
+	padding: 1vh;
+	margin: 0 0 3.8vh 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: ubuntu, sans-serif;
 }
 
 input[type=submit]:hover {
-  background-color:#434656;
-  color: #A7AABC;
+	background-color:#434656;
+	color: #A7AABC;
+}
+
+.socialIcons {
+	padding: 3.8vh;
+}
+
+.socialIcons a {
+	text-decoration: none;
+}
+
+.socialIcons img {
+	width: 4.5vh;
+	height: 4.5vh;
 }
 
 .center {
-	padding: 3.8vw 0;
+	padding: 3.8vh 0;
 }
 
 #map {
