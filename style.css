@@ -1,77 +1,132 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body, html {
 	height: 100%;
-	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
-	line-height: 160%;
-	color: #666;
+	line-height: 150%;
+	color: #434656;
 	text-align: center;
 }
 
-section {
-	overflow: auto;
-	padding: 50px 80px;
-}
-
-.header {
-	font-size: 300%;
-	text-align: center;
-}
-
-.parallaxHeader {
-	position: absolute;
-	color: #fff;
-	font-size: 250%;
-	top: 38%;
+.nav {
+	height: 6vh;
 	width: 100%;
-	letter-spacing: 3px;
-	text-shadow: 0 0 10px #000;
+	overflow: hidden;
+	z-index: 10;
+	position: fixed;
 }
 
-.parallax1 {
-	background: url(images/about.jpg);
-	min-height: 60%
-}
-.parallax2 {
-	background: url(images/process.jpg);
-	min-height: 60%
-}
-.parallax3 {
-	background: url(images/visit.jpg);
-	min-height: 60%
-}
-.parallax4 {
-	background: url(images/intouch.jpg);
-	min-height: 60%
-}
-.parallax {
-	position: relative;
-	opacity: .85;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed; 
+#homeIcon {
+	padding-top: 0.3vh;
+	height: 3vh;
+	width: 3vh;
 }
 
-.dark {
-	background-color: #323232;
-	color: #878787;
+#navbar {
+  overflow: hidden;
+  background-color: #A7AABC;
 }
+
+#navbar div {
+  float: left;
+  font-family: lobster;
+  display: block;
+  color: #fcfcfc;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar div:hover {
+	background-color: #434656;
+}
+#navbar div:active {
+	font-size: 18px;
+}
+
+.centerLogo {
+	padding: 5vh 0 1vh 0;
+	width: 100%;
+}
+
+#logo {
+	width: 60vh;
+	height: 60vh;
+}
+
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: auto;
+	height: auto;
+}
+
+.flexBox {
+	flex-grow: 1;
+	height: auto;
+	width: 40vh;
+}
+
 .light {
 	background-color: #fcfcfc;
 }
 
+.sectionHeader {
+	text-align: center;
+	color: #434656;
+	padding-top: 3.2vw;
+	padding-bottom: 0.5vw;
+	background-color: #fcfcfc;
+	font-family: lobster;
+	font-size: 150%;
+}
+
 .sectionParagraph{
+	padding: 3.2vw;
 	text-align: left;
 }
 
-@media (max-width: 780px) {
-	.header {
-		font-size: 150%;
-	}
-	.innerHeader {
+.center {
+	padding: 3.8vw 0;
+}
 
-	}
+#map {
+	min-height: 300px;
+	max-width: 700px;
+}
 
+.parallax1 {
+	background: url(images/home.jpg);
+	min-height: 70%;
+}
+
+.parallax2 {
+	background: url(images/visit.jpg);
+	min-height: 55%;
+}
+
+.parallax3 {
+	background: url(images/about.jpg);
+	min-height: 55%;
+}
+
+.parallax4 {
+	background: url(images/intouch.jpg);
+	min-height: 55%;
+}
+
+.parallax {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
 }

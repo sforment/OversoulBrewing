@@ -1,0 +1,15 @@
+Main Blue:
+#0260c4
+
+Greys:
+
+dark, #434656
+light, #A7AABC
+
+Browns:
+
+dark, #7E5E00
+light, #B8901D
+
+
+
