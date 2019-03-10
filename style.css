@@ -14,12 +14,19 @@ body, html {
 	text-align: center;
 }
 
+#mc_embed_signup {
+	font: 14px Ubuntu, sans-serif;
+	color: #434656;
+}
+
 .nav {
 	height: 6vh;
 	width: 100%;
 	overflow: hidden;
 	z-index: 10;
 	position: fixed;
+	overflow: hidden;
+	background-color: #A7AABC;
 }
 
 #homeIcon {
@@ -28,14 +35,9 @@ body, html {
 	width: 3vh;
 }
 
-#navbar {
-  overflow: hidden;
-  background-color: #A7AABC;
-}
-
 #navbar div {
   float: left;
-  font-family: lobster;
+  font-family: lobster, sans-serif;
   display: block;
   color: #fcfcfc;
   text-align: center;
@@ -85,13 +87,72 @@ body, html {
 	padding-top: 3.2vw;
 	padding-bottom: 0.5vw;
 	background-color: #fcfcfc;
-	font-family: lobster;
+	font-family: lobster, sans-serif;
 	font-size: 150%;
 }
 
 .sectionParagraph{
 	padding: 3.2vw;
 	text-align: left;
+}
+
+.sectionVisit {
+	padding: 3.8vw 0;
+	text-align: center;
+	font-size: 23px
+}
+
+.sectionVisit p {
+	padding: 3.8vw 0;
+}
+
+.sectionVisit:first-child {
+	padding-top: 5vw;
+}
+
+.sectionContact {
+	padding: 3.8vw 0;
+	text-align: center;
+	font-size: 23px;
+	overflow-wrap: break-word;
+}
+
+.sectionContact p {
+	padding: 3.8vw 0;
+}
+
+.sectionContact label {
+	padding: 3.8vw 0;
+	font-size: 23px;
+}
+
+.sectionContact:first-child {
+	padding-top: 5vw;
+}
+
+input[type=email] {
+  width: 65%;
+  padding: 1vh;
+  margin: 3vh 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 20vh;
+  background-color:#A7AABC;
+  color: #434656;
+  padding: 1vh;
+  margin: 1vh 0;
+  border: solid #434656 .4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: ubuntu, sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color:#434656;
+  color: #A7AABC;
 }
 
 .center {
@@ -129,4 +190,16 @@ body, html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
+}
+
+.footer {
+	padding-top: 1vh
+	height: 5vh;
+	width: 100%;
+	font-size: 8px;
+	color: #fcfcfc;
+	background-color: #434656;
+}
+.footer a {
+	color: #fcfcfc;;
 }
