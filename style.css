@@ -19,7 +19,7 @@ body, html {
 	color: #434656;
 }
 
-.nav {
+#navbar {
 	height: 6vh;
 	width: 100%;
 	z-index: 10;
@@ -34,7 +34,7 @@ body, html {
 	width: 2.5vh;
 }
 
-#navbar div {
+#navbar li {
   float: left;
   height: 100%;
   font-family: lobster, sans-serif;
@@ -42,14 +42,13 @@ body, html {
   color: #fcfcfc;
   text-align: center;
   padding: 1.2vh 2.5vh;
-  text-decoration: none;
   font-size: 2.5vh;
 }
 
-#navbar div:hover {
+#navbar li:hover {
 	background-color: #434656;
 }
-#navbar div:active {
+#navbar li:active {
 	font-size: 18px;
 }
 
