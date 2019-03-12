@@ -22,7 +22,6 @@ body, html {
 .nav {
 	height: 6vh;
 	width: 100%;
-	overflow: hidden;
 	z-index: 10;
 	position: fixed;
 	overflow: hidden;
@@ -30,20 +29,21 @@ body, html {
 }
 
 #homeIcon {
-	padding-top: 0.3vh;
-	height: 3vh;
-	width: 3vh;
+	padding-top: 0.5vh;
+	height: 2.5vh;
+	width: 2.5vh;
 }
 
 #navbar div {
   float: left;
+  height: 100%;
   font-family: lobster, sans-serif;
   display: block;
   color: #fcfcfc;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2.5vh;
 }
 
 #navbar div:hover {
@@ -210,6 +210,12 @@ input[type=submit]:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	.parallax {
+		background-attachment: scroll;
+	}
 }
 
 .footer {
