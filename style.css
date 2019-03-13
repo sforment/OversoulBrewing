@@ -190,22 +190,22 @@ input[type=submit]:hover {
 }
 
 .parallax1 {
-	background: url(images/home.jpg);
+	background: url(images/bgImages/home.jpg);
 	min-height: 70%;
 }
 
 .parallax2 {
-	background: url(images/visit.jpg);
+	background: url(images/bgImages/visit.jpg);
 	min-height: 55%;
 }
 
 .parallax3 {
-	background: url(images/about1.jpg);
+	background: url(images/bgImages/about.jpg);
 	min-height: 55%;
 }
 
 .parallax4 {
-	background: url(images/intouch.jpg);
+	background: url(images/bgImages/intouch.jpg);
 	min-height: 55%;
 }
 

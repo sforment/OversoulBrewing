@@ -19,10 +19,10 @@ document.addEventListener('scroll', fadeHeader);
 
 //function handling icon color change
 iconColorChange = () => {
-	document.getElementById("homeIcon").src="images/lightHopsIcon.png";
+	document.getElementById("homeIcon").src="images/iconImages/lightHopsIcon.png";
 }
 iconColorRevert = () => {
-	document.getElementById("homeIcon").src="images/darkHopsIcon.png";
+	document.getElementById("homeIcon").src="images/iconImages/darkHopsIcon.png";
 }
 
 document.querySelector('.colorChange').addEventListener('mouseover', iconColorChange);
@@ -55,22 +55,22 @@ document.getElementById('contact').addEventListener('click', scrollToContact);
 //Function handling social media link hover effects
 
 facebookChange = () => {
-	document.getElementById("facebook").src="images/facebookHov.png";
+	document.getElementById("facebook").src="images/iconImages/facebookHov.png";
 }
 facebookRevert = () => {
-	document.getElementById("facebook").src="images/facebook.png";
+	document.getElementById("facebook").src="images/iconImages/facebook.png";
 }
 twitterChange = () => {
-	document.getElementById("twitter").src="images/twitterHov.png";
+	document.getElementById("twitter").src="images/iconImages/twitterHov.png";
 }
 twitterRevert = () => {
-	document.getElementById("twitter").src="images/twitter.png";
+	document.getElementById("twitter").src="images/iconImages/twitter.png";
 }
 instagramChange = () => {
-	document.getElementById("instagram").src="images/instagramHov.png";
+	document.getElementById("instagram").src="images/iconImages/instagramHov.png";
 }
 instagramRevert = () => {
-	document.getElementById("instagram").src="images/instagram.png";
+	document.getElementById("instagram").src="images/iconImages/instagram.png";
 }
 
 document.querySelector('.facebook').addEventListener('mouseover', facebookChange);
