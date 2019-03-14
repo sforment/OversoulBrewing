@@ -17,65 +17,37 @@ fadeHeader = () => {
 
 document.addEventListener('scroll', fadeHeader);
 
-//function handling icon color change
-iconColorChange = () => {
-	document.getElementById("homeIcon").src="images/iconImages/lightHopsIcon.png";
-}
-iconColorRevert = () => {
-	document.getElementById("homeIcon").src="images/iconImages/darkHopsIcon.png";
+//function handling home button icon color change
+hopsIcon = document.querySelector('.colorChange');
+
+iconColorChange = (source) => {
+	document.getElementById("homeIcon").src = source;
 }
 
-document.querySelector('.colorChange').addEventListener('mouseover', iconColorChange);
-document.querySelector('.colorChange').addEventListener('mouseout', iconColorRevert);
+hopsIcon.addEventListener('mouseover', () => {iconColorChange("images/iconImages/lightHopsIcon.png")});
+hopsIcon.addEventListener('mouseout', () => {iconColorChange("images/iconImages/darkHopsIcon.png")});
 
-//function that handles navigation scrolling
-scrollToHome = () => {
-	document.getElementById('homeScroll').scrollIntoView({behavior: 'smooth'});
-}
-scrollToAbout = () => {
-	document.getElementById('aboutScroll').scrollIntoView({behavior: 'smooth'});
-}
-scrollToBeer = () => {
-	document.getElementById('beerScroll').scrollIntoView({behavior: 'smooth'});
-}
-scrollToVisit = () => {
-	document.getElementById('visitScroll').scrollIntoView({behavior: 'smooth'});
-}
-scrollToContact = () => {
-	document.getElementById('contactScroll').scrollIntoView({behavior: 'smooth'});
+// Function handling navigation scrolling
+scrollToSection = (elmt) => {
+	document.getElementById(elmt).scrollIntoView({behavior: 'smooth'});
 }
 
+document.getElementById('home').addEventListener('click', () => {scrollToSection('homeScroll')});
+document.getElementById('about').addEventListener('click', () => {scrollToSection('aboutScroll')});
+document.getElementById('beer').addEventListener('click', () => {scrollToSection('beerScroll')});
+document.getElementById('visit').addEventListener('click', () => {scrollToSection('visitScroll')});
+document.getElementById('contact').addEventListener('click', () => {scrollToSection('contactScroll')});
 
-document.getElementById('home').addEventListener('click', scrollToHome);
-document.getElementById('about').addEventListener('click', scrollToAbout);
-document.getElementById('beer').addEventListener('click', scrollToBeer);
-document.getElementById('visit').addEventListener('click', scrollToVisit);
-document.getElementById('contact').addEventListener('click', scrollToContact);
+// Function handling social media link hover effects
+const facebook = document.querySelector('.facebook');
+const twitter = document.querySelector('.twitter');
+const instagram = document.querySelector('.instagram');
 
-//Function handling social media link hover effects
+changeImageSource = (elmt, source) => document.getElementById(elmt).src = source;
 
-facebookChange = () => {
-	document.getElementById("facebook").src="images/iconImages/facebookHov.png";
-}
-facebookRevert = () => {
-	document.getElementById("facebook").src="images/iconImages/facebook.png";
-}
-twitterChange = () => {
-	document.getElementById("twitter").src="images/iconImages/twitterHov.png";
-}
-twitterRevert = () => {
-	document.getElementById("twitter").src="images/iconImages/twitter.png";
-}
-instagramChange = () => {
-	document.getElementById("instagram").src="images/iconImages/instagramHov.png";
-}
-instagramRevert = () => {
-	document.getElementById("instagram").src="images/iconImages/instagram.png";
-}
-
-document.querySelector('.facebook').addEventListener('mouseover', facebookChange);
-document.querySelector('.facebook').addEventListener('mouseout', facebookRevert);
-document.querySelector('.twitter').addEventListener('mouseover', twitterChange);
-document.querySelector('.twitter').addEventListener('mouseout', twitterRevert);
-document.querySelector('.instagram').addEventListener('mouseover', instagramChange);
-document.querySelector('.instagram').addEventListener('mouseout', instagramRevert);
+facebook.addEventListener('mouseover',() => {changeImageSource('facebook', 'images/iconImages/facebookHov.png')});
+facebook.addEventListener('mouseout', () => {changeImageSource('facebook', 'images/iconImages/facebook.png')});
+twitter.addEventListener('mouseover', () => {changeImageSource('twitter', 'images/iconImages/twitterHov.png')});
+twitter.addEventListener('mouseout', () => {changeImageSource('twitter', 'images/iconImages/twitter.png')});
+instagram.addEventListener('mouseover', () => {changeImageSource('instagram', 'images/iconImages/instagramHov.png')});
+instagram.addEventListener('mouseout', () => {changeImageSource('instagram', 'images/iconImages/instagram.png')});
