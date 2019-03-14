@@ -51,3 +51,45 @@ twitter.addEventListener('mouseover', () => {changeImageSource('twitter', 'image
 twitter.addEventListener('mouseout', () => {changeImageSource('twitter', 'images/iconImages/twitter.png')});
 instagram.addEventListener('mouseover', () => {changeImageSource('instagram', 'images/iconImages/instagramHov.png')});
 instagram.addEventListener('mouseout', () => {changeImageSource('instagram', 'images/iconImages/instagram.png')});
+
+//JS handling the Beer section of the website
+
+const carouselSlide = document.querySelector('.carouselSlide');
+const carouselImages = document.querySelectorAll('.carouselSlide img');
+
+//buttons
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+//counter
+let counter = 1;
+
+carouselSlide.style.transform = 'translateX(' + (-30 * counter) + 'vh';
+
+//button listeners
+nextBtn.addEventListener('click', () => {
+	if(counter >= carouselImages.length - 1) return;
+	carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+	counter++;
+	carouselSlide.style.transform = 'translateX(' + (-30 * counter) + 'vh';
+});
+
+prevBtn.addEventListener('click', () => {
+	if(counter >= 0) return;
+	carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+	counter--;
+	carouselSlide.style.transform = 'translateX(' + (-30 * counter) + 'vh';
+});
+
+carouselSlide.addEventListener('transitionend', () => {
+	if (carouselImages[counter].id === 'lastClone') {
+		carouselSlide.style.transition = 'none';
+		counter = carouselImages.length - 2;
+		carouselSlide.style.transform = 'translateX(' + (-30 * counter) + 'vh';		
+	}
+	if (carouselImages[counter].id === 'firstClone') {
+		carouselSlide.style.transition = 'none';
+		counter = carouselImages.length - counter;
+		carouselSlide.style.transform = 'translateX(' + (-30 * counter) + 'vh';		
+	}
+});
