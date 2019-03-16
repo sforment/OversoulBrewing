@@ -141,13 +141,13 @@ body, html {
 }
 
 .sectionParagraph{
-	padding: 3.8vh 1vh 5.8vh 1vh;
+	padding: 2vh 2vh;
 	text-align: left;
 }
 
 .sectionFooter {
 	color: #434656;
-	padding-bottom: 1.5vh;
+	padding: 1.5vh 0;
 	font-family: lobster, sans-serif;
 }
 
