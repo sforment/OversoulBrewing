@@ -94,21 +94,16 @@ body, html {
 	font-size: 18px;
 }
 
-.centerLogo {
-	padding: 5vh 0 1vh 0;
-	width: 100%;
-}
-
 #logo {
-	width: 60vh;
-	height: 60vh;
+	margin-top: 25vh;
+	height: 55vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	#logo {
-		margin-top: 12vw;
-		width: 85vw;
-		height: 85vw;
+		margin-top: 30vh;
+		width: 50vh;
+		height: auto;
 	}
 }
 
@@ -234,7 +229,7 @@ input[type=submit]:hover {
 
 .parallax1 {
 	background: url(images/bgImages/home.jpg);
-	min-height: 70%;
+	min-height: 100%;
 }
 
 .parallax2 {
