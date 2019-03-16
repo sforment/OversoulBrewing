@@ -26,6 +26,30 @@ body, html {
 	width: 100%;
 }
 
+#prevBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 11;
+	left: 5%;
+	font-size: 5vh;
+	color: #434656;
+	cursor: pointer;
+}
+
+#nextBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 11;
+	right: 5%;
+	font-size: 5vh;
+	color: #434656;
+	cursor: pointer;
+}
+
+#beerScroll {
+	position: relative;
+}
+
 .carouselSlide img {
 	height: 45vh;
 	width: 30vh;
